@@ -35,9 +35,9 @@ def convertPoseMapToArrayRelative(pose_landmarks):
         x[i*3+2] = pose_landmarks.landmark[mediapipe2posenet[i]].visibility
 
     return x
-Load model from file:
+#Load model from file:
 reconstructed_model = keras.models.load_model('push_up_catchallModel')
-this is a simple web cam example, with no hand mapping
+t#his is a simple web cam example, with no hand mapping
 cap = cv2.VideoCapture(0)
 
 # Check if the webcam is opened correctly
